@@ -1,0 +1,22 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    font-family: 'Palanquin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body img {
+    width: 270px;
+    height: auto;
+}
+
+footer p {
+    margin-top: 50px;
+}
