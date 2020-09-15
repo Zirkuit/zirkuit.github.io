@@ -136,9 +136,6 @@ footer {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    .secondarytitle {
-        font-size: 13px;
-    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -148,9 +145,6 @@ footer {
     .headertop {
         font-size: 20px;
     }
-    .secondarytitle {
-        font-size: 12px;
-    }
 }
 
 @media only screen and (max-width: 340px) {
@@ -159,8 +153,5 @@ footer {
     }
     .headertop {
         font-size: 20px;
-    }
-    .secondarytitle {
-        font-size: 10px;
     }
 }
