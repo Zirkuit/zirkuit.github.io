@@ -23,12 +23,17 @@ body {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: rgb(226, 226, 226);
+    color: rgba(226, 226, 226, 0.808);
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
     background-size: 200% 100%;
     background-position:left bottom;
+    transition: .2s;
+}
+
+.button:hover {
+    color: white;
 }
 
 .maincontent {

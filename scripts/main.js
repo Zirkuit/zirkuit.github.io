@@ -2,7 +2,6 @@ function goto(element, link) {
     element.style.transition = ".1s"
     element.style.color = "white"
     element.style.borderColor = "white"
-    element.style.boxShadow = "0px 0px 15px 0px rgba(255,255,255,1)"
     setTimeout(function(){ 
         element.style.color = ""
         element.style.borderColor = ""
@@ -10,7 +9,6 @@ function goto(element, link) {
         setTimeout(function(){ 
             element.style.color = "white"
             element.style.borderColor = "white"
-            element.style.boxShadow = "0px 0px 15px 0px rgba(255,255,255,1)"
             setTimeout(function(){ 
                 element.style.color = ""
                 element.style.borderColor = ""
