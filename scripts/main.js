@@ -5,14 +5,12 @@ function goto(element, link) {
     setTimeout(function(){ 
         element.style.color = ""
         element.style.borderColor = ""
-        element.style.boxShadow = ""
         setTimeout(function(){ 
             element.style.color = "white"
             element.style.borderColor = "white"
             setTimeout(function(){ 
                 element.style.color = ""
                 element.style.borderColor = ""
-                element.style.boxShadow = ""
                 setTimeout(function(){ 
                     element.style.transition = ""
                     if (link != "debug") {

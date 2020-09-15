@@ -22,7 +22,6 @@ h1 {
 
 .card {
     width: 100%;
-    border: var(--gray) 2px solid;
     height: 160px;
     background-color: rgba(255, 255, 255, 0);
     margin-top: 50px;
@@ -52,6 +51,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0);
+    border: var(--gray) 2px solid;
 }
 
 @media (hover: hover) and (pointer: fine) {
