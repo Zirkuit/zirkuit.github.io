@@ -1,2 +1,16 @@
 
-.DS_Store
+# custom
+
+
+# parcel
+
+.cache
+.parcel-cache
+dist
+
+# node
+
+node_modules
+yarn-error.log
+package-lock.json
+yarn.lock

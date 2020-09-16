@@ -1,0 +1,39 @@
+{
+  "name": "zirkuit.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Zirkuit/zirkuit.github.io",
+  "author": "-",
+  "license": "UNLICENSED",
+  "template": {
+    "extends": [
+      "parcelEslint"
+    ],
+    "parcel": {
+      "entry": "public/index.pug"
+    }
+  },
+  "scripts": {
+    "start": "parcel start public/index.pug  ",
+    "build": "rm -rf dist && parcel build public/index.pug  ",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "test": "mocha -A",
+    "cov": "nyc mocha"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-ipfs": "*",
+    "eslint-config-oclif": "*",
+    "mocha": "*",
+    "nyc": "*",
+    "pug": "^3.0.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "mkgs-tool": "^0.1.11",
+    "parcel": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  }
+}

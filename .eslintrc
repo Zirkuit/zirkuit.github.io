@@ -1,0 +1,19 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "public/**/*.js"
+      ],
+      "env": {
+        "browser": true
+      }
+    }
+  ],
+  "extends": [
+    "ipfs",
+    "oclif"
+  ],
+  "rules": {
+    "no-await-in-loop": "off"
+  }
+}
