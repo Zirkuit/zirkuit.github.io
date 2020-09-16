@@ -23,3 +23,24 @@ function goto(element, link) {
         }, 100);
     }, 100);
 }
+
+function select(element) {
+    element.style.transition = ".1s"
+    element.style.color = "white"
+    element.style.borderColor = "white"
+    setTimeout(function(){ 
+        element.style.color = ""
+        element.style.borderColor = ""
+        setTimeout(function(){ 
+            element.style.color = "white"
+            element.style.borderColor = "white"
+            setTimeout(function(){ 
+                element.style.color = ""
+                element.style.borderColor = ""
+                setTimeout(function(){ 
+                    element.style.transition = ""
+                }, 100);
+            }, 100);
+        }, 100);
+    }, 100);
+}
