@@ -1,0 +1,20 @@
+extends ../base.pug
+
+block extrahead
+  <link rel="stylesheet" href="/styles/jobs.css">
+
+block content
+  - var jobs = [ "Software, Front-End", "Software, Full Stack", "Software, Back-End", "Software, AI & ML" ]
+  a(href='/index.pug')
+    img.logo(src='/assets/zirkuit_black.png', alt='')
+  h1 Join Us
+  p.secondarytitle
+    | We&apos;re shaping the future with experiments and solutions to modern-day problems. 
+    br
+    | We&apos;re looking for open-minded, talented people to help us with our mission.
+    each job in jobs
+      - var slug=job.toLowerCase().replace(/[^a-z ]/g, '').replace(/  /g, ' ').replace(/ /g, '-') // replace " " with - and remove non-letters
+      .card
+        a(href="/jobs/" + slug + "/index.pug")
+          h2= job
+          h3 Remote

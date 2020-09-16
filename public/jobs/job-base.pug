@@ -1,0 +1,17 @@
+extends ../base.pug
+
+block extrahead
+  <link rel="stylesheet" href="/styles/jobs.css">
+
+block content
+  a(href='/index.pug')
+    img.logo(src='/assets/zirkuit_black.png', alt='')
+  h2.headertop Join Us
+  h1.smaller
+    block jobtitle
+      | content here
+  p.jobdesc
+    block jobdesc
+      :markdown-it(linkify langPrefix='highlight-')
+        content here
+  a(href="#", class="button") Apply for this position &rarr;

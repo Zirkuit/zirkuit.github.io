@@ -27,11 +27,18 @@ function goto(element, link) {
 function interceptClickEvent(e) {
   let href
   var target = e.target || e.srcElement
-  if (target.tagName === 'A') {
-    href = target.getAttribute('href')
 
-    e.preventDefault()
-    goto(target, href)
+  while (target) {
+    if (target.tagName === 'A') {
+      href = target.getAttribute('href')
+
+      e.preventDefault()
+      goto(target, href)
+
+      break
+    }
+
+    target = target.parentElement
   }
 }
 

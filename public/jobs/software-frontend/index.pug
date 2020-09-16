@@ -1,0 +1,10 @@
+extends ../job-base.pug
+
+block jobtitle
+  | That job
+
+block jobdesc
+  :markdown-it(linkify langPrefix='highlight-')
+    exploding kittens everywhere
+    
+    > Disclaimer: tada
