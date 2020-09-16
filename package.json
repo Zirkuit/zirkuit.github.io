@@ -27,13 +27,13 @@
     "eslint-config-oclif": "*",
     "mocha": "*",
     "nyc": "*",
+    "parcel-plugin-imagemin": "^4.0.1",
     "pug": "^3.0.0",
     "typescript": "^4.0.2"
   },
   "dependencies": {
     "mkgs-tool": "^0.1.11",
     "parcel": "^1.12.4",
-    "parcel-plugin-imagemin": "^4.0.1",
     "typescript-eslint": "^0.0.1-alpha.0"
   }
 }
