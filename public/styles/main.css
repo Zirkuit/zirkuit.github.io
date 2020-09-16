@@ -9,7 +9,13 @@ body {
     right: 0;
     bottom: 0;
     background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+
 
 * {
     color: white;
