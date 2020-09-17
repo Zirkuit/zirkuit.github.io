@@ -48,7 +48,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../../../assets/favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../../../assets/favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../../../assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../assets/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../../../assets/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/favicons/favicon-16x16.png">
@@ -63,15 +63,29 @@
         <a href="../../../"><img src="../../../assets/zirkuit_black.png" class="logo" alt=""></a>
         <h2 class="headertop">Join Us</h2>
         <h1 class="smaller">Software, Front-End</h1>
-        <form class="applyform" action="">
-            <input placeholder="Name" class="textinput" type="text">
-            <input placeholder="CV" class="textinput" type="text">
-            <input placeholder="Others" class="textinput" type="text">
+        <form class="applyform" action="https://formspree.io/mzbkpobk" method="POST" enctype="multipart/form-data">
+            <label>Resume/CV
+                <input type="file" name="upload">
+            </label>
+            <input placeholder="Full name" type="text" name="name" class="textinput">
+            <input placeholder="Email" type="email" name="email" class="textinput">
+            <input placeholder="Phone" type="telephone" name="phone" class="textinput">
+            <label>Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend
+                using an action word (designed, led, built, promoted, launched, created, etc.)
+                <input type="text" name="accomplishments" class="textinput">
+            </label>
+
+            <label>Please attach a sample of your work or a portfolio.
+                <input type="file" name="upload">
+            </label>
+
+            <button type="submit">Send</button>
         </form>
         <a class="button" onclick="goto(this, 'debug')">Apply now →</a>
-    <footer>
-        <p>© Zirkuit 2020</p>
-    </footer>
+        <footer>
+            <p>© Zirkuit 2020</p>
+        </footer>
     </div>
 </body>
+
 </html>
