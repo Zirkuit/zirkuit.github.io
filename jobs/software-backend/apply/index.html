@@ -64,24 +64,22 @@
         <h2 class="headertop">Join Us</h2>
         <h1 class="smaller">Software, Back-End</h1>
         <form class="applyform" action="https://formspree.io/maylwgvy" method="POST" enctype="multipart/form-data">
-            <label>Resume/CV
-                <input type="file" name="upload">
-            </label>
+            <div class="maincontent small">
+            <label for="upload">Resume/CV</label>
+            <input type="file" id="upload" name="upload">
+            <label for="name">Name</label>
             <input placeholder="Full name" type="text" name="name" class="textinput">
+            <label for="email">Email</label>
             <input placeholder="Email" type="email" name="email" class="textinput">
+            <label for="phone">Phone</label>
             <input placeholder="Phone" type="telephone" name="phone" class="textinput">
-            <label>Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend
-                using an action word (designed, led, built, promoted, launched, created, etc.)
-                <input type="text" name="accomplishments" class="textinput">
-            </label>
-
-            <label>Please attach a sample of your work or a portfolio.
-                <input type="file" name="upload">
-            </label>
-
-            <button type="submit">Send</button>
+            <label for="accomplishments">Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend using an action word (designed, led, built, promoted, launched, created, etc.) </label>
+            <input type="text" name="accomplishments" class="textinput">
+            <label for="upload">Please attach a sample of your work or a portfolio.</label>
+            <input type="file" name="upload">
+            <button class="button" type="submit">Send →</button>
+            </div>
         </form>
-        <a class="button" onclick="goto(this, 'debug')">Apply now →</a>
     <footer>
         <p>© Zirkuit 2020</p>
     </footer>
