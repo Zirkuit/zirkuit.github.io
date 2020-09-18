@@ -13,11 +13,11 @@ function goto(element, link) {
                 element.style.borderColor = ""
                 setTimeout(function(){ 
                     element.style.transition = ""
-                    if (link != "debug") {
-                        window.location.href = link;
-                    } else {
-                        alert("Page is not yet ready")
-                    }
+                    if (link === '#') {
+                        alert('Page not ready yet')
+                      } else {
+                        window.location.href = link
+                      }
                 }, 100);
             }, 100);
         }, 100);
