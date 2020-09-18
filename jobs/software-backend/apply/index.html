@@ -63,10 +63,23 @@
         <a href="../../../"><img src="../../../assets/zirkuit_black.png" class="logo" alt=""></a>
         <h2 class="headertop">Join Us</h2>
         <h1 class="smaller">Software, Back-End</h1>
-        <form class="applyform" action="">
-            <input placeholder="Name" class="textinput" type="text">
-            <input placeholder="CV" class="textinput" type="text">
-            <input placeholder="Others" class="textinput" type="text">
+        <form class="applyform" action="https://formspree.io/maylwgvy" method="POST" enctype="multipart/form-data">
+            <label>Resume/CV
+                <input type="file" name="upload">
+            </label>
+            <input placeholder="Full name" type="text" name="name" class="textinput">
+            <input placeholder="Email" type="email" name="email" class="textinput">
+            <input placeholder="Phone" type="telephone" name="phone" class="textinput">
+            <label>Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend
+                using an action word (designed, led, built, promoted, launched, created, etc.)
+                <input type="text" name="accomplishments" class="textinput">
+            </label>
+
+            <label>Please attach a sample of your work or a portfolio.
+                <input type="file" name="upload">
+            </label>
+
+            <button type="submit">Send</button>
         </form>
         <a class="button" onclick="goto(this, 'debug')">Apply now →</a>
     <footer>
