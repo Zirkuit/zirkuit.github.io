@@ -62,7 +62,9 @@ footer {
 
 .smaller {
     font-size: 80px;
-    margin-top: -30px;
+    margin-top: -10px;
+    line-height: 90px;
+    margin-bottom: 20px;
 }
 
 .jobdesc {
