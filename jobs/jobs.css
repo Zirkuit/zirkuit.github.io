@@ -54,6 +54,11 @@ h3 {
     margin-bottom: 30px;
 }
 
+.below-apply-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
         transform: scale(1.05);

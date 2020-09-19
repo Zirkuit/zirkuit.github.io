@@ -37,6 +37,11 @@ body {
     color: white;
 }
 
+.non-focus-button {
+    color: grey;
+    text-decoration: underline;
+}
+
 .maincontent {
     max-width: 760px;
     display: flex;
