@@ -19,6 +19,10 @@
     transition: .2s;
 }
 
+.longer {
+    height: 203px;
+}
+
 .textinput:focus {
     border-color: white;
     border-width: 5px;
