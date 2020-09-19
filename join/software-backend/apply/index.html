@@ -14,7 +14,15 @@
 
         gtag('config', 'UA-177873973-1');
     </script>
-
+        <script type="text/javascript">
+            (function () {
+                var css = document.createElement('link');
+                css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+                css.rel = 'stylesheet';
+                css.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(css);
+            })();
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
@@ -65,8 +73,9 @@
         <h1 class="smaller">Software, Back-End</h1>
         <form class="applyform" action="https://formspree.io/maylwgvy" method="POST" enctype="multipart/form-data">
             <div class="maincontent small">
-            <label for="upload">Resume/CV</label>
-            <input type="file" id="upload" name="upload">
+            <label for="name">Resume/CV</label>
+            <label class="textinput fileinputlabel" for="resumecv"><i class="fas fa-plus-circle"></i>Add File</label>
+            <input class="fileinput" type="file" id="resumecv" name="upload">
             <label for="name">Name</label>
             <input type="text" name="name" class="textinput">
             <label for="email">Email</label>
@@ -76,7 +85,8 @@
             <label for="accomplishments">Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend using an action word (designed, led, built, promoted, launched, created, etc.) </label>
             <input type="text" name="accomplishments" class="textinput longer">
             <label for="upload">Please attach a sample of your work or a portfolio.</label>
-            <input type="file" name="upload">
+            <label class="textinput fileinputlabel" for="portfolio"><i class="fas fa-plus-circle"></i>Add File</label>
+            <input class="fileinput" type="file" id="portfolio" name="upload">
             <button class="button" type="submit">Send →</button>
             </div>
         </form>

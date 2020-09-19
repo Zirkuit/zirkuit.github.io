@@ -38,7 +38,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
 
 label {
@@ -47,4 +46,14 @@ label {
 
 .fileinput {
     display: none;
+}
+
+.fileinputlabel {
+    background-color: rgb(46, 46, 46);
+    margin-bottom: 20px!important;
+    margin-top: 0!important;
+}
+
+.fileinputlabel i {
+    margin-right: 10px;
 }
