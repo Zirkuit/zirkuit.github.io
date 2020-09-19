@@ -67,7 +67,7 @@ footer {
 
 .smaller {
     font-size: 80px;
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
 .jobdesc {
@@ -95,6 +95,7 @@ footer {
 @media only screen and (max-width: 880px) {
     .smaller {
         font-size: 60px;
+        margin-top: -40px;
     }
     .headertop {
         font-size: 30px;
@@ -124,6 +125,7 @@ footer {
 @media only screen and (max-width: 600px) {
     .smaller {
         font-size: 40px;
+        margin-top: -30px;
     }
     .headertop {
         font-size: 20px;
