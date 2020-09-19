@@ -14,12 +14,19 @@
 
         gtag('config', 'UA-177873973-1');
     </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-    
+    <script type="text/javascript">
+        (function () {
+            var css = document.createElement('link');
+            css.href = 'https://use.fontawesome.com/releases/v5.10.0/css/all.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+        })();
+    </script>
     <link rel="stylesheet" href="../../../main.css">
     <link rel="stylesheet" href="../../join.css">
     <link rel="stylesheet" href="../../../stylesheets/apply.css">
@@ -48,7 +55,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../../../assets/favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../../../assets/favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../../../assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../assets/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../../../assets/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/favicons/favicon-16x16.png">
@@ -64,27 +71,32 @@
         <h2 class="headertop">Apply</h2>
         <h1 class="smaller">Hardware, Electronics & Robotics</h1>
         <form class="applyform" action="https://formspree.io/xyybgqoe" method="POST" enctype="multipart/form-data">
-            <label>Resume/CV
-                <input type="file" name="upload">
-            </label>
-            <input placeholder="Full name" type="text" name="name" class="textinput">
-            <input placeholder="Email" type="email" name="email" class="textinput">
-            <input placeholder="Phone" type="telephone" name="phone" class="textinput">
-            <label>Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend
-                using an action word (designed, led, built, promoted, launched, created, etc.)
-                <input type="text" name="accomplishments" class="textinput">
-            </label>
-
-            <label>Please attach a sample of your work or a portfolio.
-                <input type="file" name="upload">
-            </label>
-
-            <button type="submit">Send</button>
+            <div class="maincontent small">
+                <label for="name">Resume/CV</label>
+                <label class="textinput fileinputlabel" for="resumecv"><i class="fas fa-plus-circle"></i>Add
+                    File</label>
+                <input class="fileinput" type="file" id="resumecv" name="upload">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="textinput">
+                <label for="email">Email</label>
+                <input type="email" name="email" class="textinput">
+                <label for="phone">Phone</label>
+                <input type="telephone" name="phone" class="textinput">
+                <label for="accomplishments">Please provide us with 3-4 examples highlighting your most technical
+                    accomplishments. We recommend using an action word (designed, led, built, promoted, launched,
+                    created, etc.) </label>
+                <input type="text" name="accomplishments" class="textinput longer">
+                <label for="upload">Please attach a sample of your work or a portfolio.</label>
+                <label class="textinput fileinputlabel" for="portfolio"><i class="fas fa-plus-circle"></i>Add
+                    File</label>
+                <input class="fileinput" type="file" id="portfolio" name="upload"><br>
+                <button class="button" type="submit">Apply Now →</button>
+            </div>
         </form>
-        <a class="button" onclick="goto(this, 'debug')">Apply now →</a>
-    <footer>
-        <p>© Zirkuit 2020</p>
-    </footer>
+        <footer>
+            <p>© Zirkuit 2020</p>
+        </footer>
     </div>
 </body>
+
 </html>
