@@ -49,6 +49,11 @@ h3 {
     border: var(--gray) 2px solid;
 }
 
+.learn-more-button-div {
+    margin-top: 32px;
+    margin-bottom: 30px;
+}
+
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
         transform: scale(1.05);
