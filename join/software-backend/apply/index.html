@@ -21,7 +21,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/c857a23705.js%22%3E"></script>
     <link rel="stylesheet" href="../../../main.css">
-    <link rel="stylesheet" href="../../jobs.css">
+    <link rel="stylesheet" href="../../join.css">
     <link rel="stylesheet" href="../../../stylesheets/apply.css">
     <script src="../../../scripts/main.js"></script>
     <meta name="robots" content="index, follow">
@@ -38,7 +38,7 @@
         content="Experiments and solutions to modern-day problems with hardware and software working together.">
     <meta property="og:description"
         content="Experiments and solutions to modern-day problems with hardware and software working together.">
-    <title>Zirkuit | Graphic Designer</title>
+    <title>Zirkuit | Software, Back-End</title>
     <link rel="apple-touch-icon" sizes="57x57" href="../../../assets/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../../../assets/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/favicons/apple-icon-72x72.png">
@@ -62,26 +62,24 @@
     <div class="maincontent">
         <a href="../../../"><img src="../../../assets/zirkuit_black.png" class="logo" alt=""></a>
         <h2 class="headertop">Apply</h2>
-        <h1 class="smaller">Graphic Designer</h1>
-        <form class="applyform" action="https://formspree.io/xeqpjbnk" method="POST" enctype="multipart/form-data">
-            <label>Resume/CV
-                <input type="file" name="upload">
-            </label>
+        <h1 class="smaller">Software, Back-End</h1>
+        <form class="applyform" action="https://formspree.io/maylwgvy" method="POST" enctype="multipart/form-data">
+            <div class="maincontent small">
+            <label for="upload">Resume/CV</label>
+            <input type="file" id="upload" name="upload">
+            <label for="name">Name</label>
             <input placeholder="Full name" type="text" name="name" class="textinput">
+            <label for="email">Email</label>
             <input placeholder="Email" type="email" name="email" class="textinput">
+            <label for="phone">Phone</label>
             <input placeholder="Phone" type="telephone" name="phone" class="textinput">
-            <label>Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend
-                using an action word (designed, led, built, promoted, launched, created, etc.)
-                <input type="text" name="accomplishments" class="textinput">
-            </label>
-
-            <label>Please attach a sample of your work or a portfolio.
-                <input type="file" name="upload">
-            </label>
-
-            <button type="submit">Send</button>
+            <label for="accomplishments">Please provide us with 3-4 examples highlighting your most technical accomplishments. We recommend using an action word (designed, led, built, promoted, launched, created, etc.) </label>
+            <input type="text" name="accomplishments" class="textinput">
+            <label for="upload">Please attach a sample of your work or a portfolio.</label>
+            <input type="file" name="upload">
+            <button class="button" type="submit">Send →</button>
+            </div>
         </form>
-        <a class="button" onclick="goto(this, 'debug')">Apply now →</a>
     <footer>
         <p>© Zirkuit 2020</p>
     </footer>
