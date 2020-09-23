@@ -24,45 +24,6 @@ function goto(element, link) {
     }, 100);
 }
 
-
-function nlToA(n) {
-  let o = []
-  for (let i=0; i<n.length;i++) o.push(n[i])
-  return o
-}
-
-function formSubmit(form) {
-
-const formData = new FormData(form)
-
-fetch('https://forms.krüger.it/zirkuit', {
-  method: 'POST', // or 'PUT'
-  body: formData
-})
-.then(response => response.json())
-.then(data => {
-  console.log('Success:', data);
-  alert('Successfully applied')
-  form.style+=';display:none'
-})
-.catch((error) => {
-  console.error('Error:', error);
-  alert('Failed to submit application')
-});
-}
-
-setTimeout(() => {
-  let form
-  if ((form = document.getElementsByClassName("applyform")[0])) {
-    form.onsubmit = (e) => {
-      e.preventDefault()
-      formSubmit(form)
-      
-    }
-  }
-}, 1000)
-
-
 function interceptClickEvent(e) {
     let href
     var target = e.target || e.srcElement
