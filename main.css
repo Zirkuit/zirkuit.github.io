@@ -14,12 +14,11 @@ body {
 * {
     color: white;
     font-family: 'Palanquin', sans-serif;
-    scrollbar-width: thin;
     scrollbar-color: #E2E2E2BF black;
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
