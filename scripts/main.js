@@ -22,26 +22,29 @@ function goto(element, link) {
       }, 100);
     }, 100);
   }, 100);
+}
 
-  function interceptClickEvent(e) {
-    let href
-    var target = e.target || e.srcElement
+function interceptClickEvent(e) {
+  let href
+  var target = e.target || e.srcElement
 
-    while (target) {
-      if (target.tagName === 'A') {
-        href = target.getAttribute('href')
+  while (target) {
+    if (target.tagName === 'A') {
+      href = target.getAttribute('href')
 
-        e.preventDefault()
-        goto(target, href)
+      e.preventDefault()
+      goto(target, href)
 
-        break
-      }
+      break
+    }
 
-      target = target.parentElement
+    target = target.parentElement
+  }
+}
 
-      // listen for link click events at the document level
-      if (document.addEventListener) {
-        document.addEventListener('click', interceptClickEvent)
-      } else if (document.attachEvent) {
-        document.attachEvent('onclick', interceptClickEvent)
-      }
+// listen for link click events at the document level
+if (document.addEventListener) {
+  document.addEventListener('click', interceptClickEvent)
+} else if (document.attachEvent) {
+  document.attachEvent('onclick', interceptClickEvent)
+}
