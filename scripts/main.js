@@ -1,3 +1,4 @@
+/*
 function goto(element, link) {
   element.style.transition = ".1s"
   element.style.color = "white"
@@ -48,3 +49,4 @@ if (document.addEventListener) {
 } else if (document.attachEvent) {
   document.attachEvent('onclick', interceptClickEvent)
 }
+*/

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 :root {
     --gray: rgb(138, 138, 138);
+    --gradient: linear-gradient(102deg, rgba(31,72,126,1) 0%, rgba(55,105,150,1) 100%);
 }
 
 body {
@@ -8,12 +11,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: #04070C;
 }
 
 * {
     color: white;
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Inter', sans-serif;
     scrollbar-color: #E2E2E2BF black;
 }
 
@@ -30,25 +33,9 @@ body {
 }
 
 .button {
-    min-width: 200px;
-    padding: 20px;
-    border: var(--gray) 2px solid;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: rgba(226, 226, 226, 0.808);
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 400;
-    letter-spacing: 2px;
-    background-size: 200% 100%;
-    background-position:left bottom;
-    transition: .2s;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button:hover {
-    color: white;
+    color: #6290C8;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .non-focus-button {
@@ -71,7 +58,8 @@ h1 {
     font-size: 100px;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: -40px;
+    margin-bottom: 0px;
+    color: #346898;
 }
 
 a {

@@ -11,14 +11,13 @@ body .logo {
 .secondarytitle {
     font-size: 20px;
     font-weight: 400;
-    color: var(--gray);
+    color: #DAE3F4;
     text-align: center;
 }
 
 .card {
     width: 100%;
     height: 160px;
-    background-color: rgba(255, 255, 255, 0);
     margin-top: 50px;
     transition: .2s;
 }
@@ -32,21 +31,20 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 1.17em;
-    color: var(--gray);
-    text-transform: uppercase;
-    margin-top: 2px;
+    color: #DAE3F4;
+    margin-top: 5px;
 }
 
 .card a {
-    padding: 0px 40px 10px 40px;
+    padding: 0px 40px 00px 40px;
     height: fill-available;
     width: fill-available;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0);
-    border: var(--gray) 2px solid;
+    border-radius: 30px;
+    background: var(--gradient);
 }
 
 .learn-more-button-div {
